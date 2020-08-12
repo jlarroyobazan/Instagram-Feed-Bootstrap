@@ -12,11 +12,11 @@ body{
     padding: 0px;
     border: 1px solid white;
 }
-.zoom-img-vid {
+.zoom-img {
   overflow: hidden;
   position: relative;
 }
-.zoom-img-vid:after {
+.zoom-img:after {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -24,14 +24,14 @@ body{
   opacity: 0;
   transition: opacity .25s;
 }
-.zoom-img-vid img {
+.zoom-img img {
   transition: transform .25s;
   width: 100%;
 }
-.zoom-img-vid:hover img {
+.zoom-img:hover img {
   transform: scale(1.2);
 }
-.zoom-img-vid:hover:after {
+.zoom-img:hover:after {
   opacity: 1;
 }
 .button-enabled{
