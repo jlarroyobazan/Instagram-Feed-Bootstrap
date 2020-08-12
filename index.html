@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Instagram Feed Bootstrap | José Luis Arroyo</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default mb-5"></nav>
+        <nav class="navbar navbar-light bg-light fixed-top navbar-expand-md">
+            <div class="container">
+                <a href="#">
+                    <img src="./src/img/instagram-text.png" width="35%" height="35%">
+                </a>
+                    <form class="form-inline ml-auto">
+    <!-- button-dropdown-menu -->
+                        <button class="btn btn-success" data-toggle="modal" data-target="#new-post" type="button">Create a new post</button>
+    <!-- dropdown-menu -->
+                        <div class="dropdown nav-item">
+                            <a class="nav-link dropdown-toggle text-secondary" href="#" data-toggle="dropdown">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Log Out</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    <!-- content -->
+            <div class="container">
+    <!-- switch -->
+                <div class="d-flex justify-content-center">
+                    <ul class="nav nav-justified nav-pills nav-fill mb-1">
+                        <li class="nav-item pill-color">
+                            <a class="nav-link active btn-secondary" href="#grid-switch" data-toggle="pill"><i class="fas fa-th"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item pill-color">
+                            <a class="nav-link btn-secondary" href="#column-switch" data-toggle="pill"><i class="fas fa-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div class="tab-content">
+    <!-- 3x3-grid-switch -->
+        <div id="grid-switch" class="tab-pane active in">
+        <div class="container-flex">
+    <!-- 3x3-column-1 -->
+            <div class="row">
+                <div class="col-4 p-1"><img class="card-img" src="./src/img/image-1.jpeg" alt="Card image cap"></div>
+                <div class="col-4 p-1"><img class="card-img" src="./src/img/image-2.jpeg" alt="Card image cap"></div>
+                <div class="col-4 p-1"><img class="card-img" src="./src/img/image-7.jpeg" alt="Card image cap"></div>
+            </div>
+    <!-- 3x3-column-2 -->
+            <div class="row">
+                <div class="col-4 p-1"><img class="card-img" src="./src/img/image-3.jpeg" alt="Card image cap"></div>
+                <div class="col-4 p-1"><img class="card-img" src="./src/img/image-4.jpeg" alt="Card image cap"></div>
+                <div class="col-4 p-1"><img class="card-img" src="./src/img/image-5.jpeg" alt="Card image cap"></div>
+            </div>
+    <!-- 3x3-column-3 -->
+            <div class="row">
+                <div class="col-4 p-1"><video class="card-img" playsinline autoplay muted loop src="./src/vid/video-2.mp4" alt="Card image cap"></div>
+                <div class="col-4 p-1"><img class="card-img" src="./src/img/image-6.jpeg" alt="Card image cap"></div>
+                <div class="col-4 p-1"><video class="card-img" playsinline autoplay muted loop src="./src/vid/video-3.mp4" alt="Card image cap"></div>
+            </div>  
+        </div>
+    </div>
+    <!-- column-switch -->
+    <div id="column-switch" class="tab-pane fade">
+    <!-- column-grid -->
+            <div class="row my-bgcolor d-flex justify-content-center">
+                <div class="col-6">
+    <!-- grid-card-1 -->
+                    <div class="card my-card mb-5 mt-3">
+                        <div class="card-text mt-2 mx-2 d-flex bg-white justify-content-between">
+                            <p class="m-0 h3">My first photo</p><p class="m-0 h4">12/14</p>
+                        </div>
+                        <div class="card-body pl-0 pr-0 ">
+                            <div class="d-flex justify-content-center embed-responsive embed-responsive-16by9">
+                                <img class="card-img-top" src="./src/img/image-1.jpeg" alt="Card image cap">
+                            </div>
+                            <div class="card-text m-2 font-weight-bold">58 Likes</div>
+                                <p class="card-text m-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                            </div>
+                                <div class="card-text py-2 d-flex justify-content-between text-black-50 px-2">
+                                    <div class="">
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="far fa-heart"></i></button>
+                                        <input type="text" class="no-border" name="" placeholder="Comment...">
+                                    </div>
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="fas fa-ellipsis-v fa-1x"></i> 
+                                    </button>
+                                </div>
+                            </div>
+    <!-- grid-card-2 -->
+                    <div class="card my-card mb-5 mt-3">
+                        <div class="card-text mt-2 mx-2 d-flex bg-white justify-content-between">
+                            <p class="m-0 h3">My second photo</p><p class="m-0 h4">12/14</p>
+                        </div>
+                        <div class="card-body pl-0 pr-0 ">
+                            <div class="d-flex justify-content-center embed-responsive embed-responsive-16by9">
+                                <img class="card-img-top" src="./src/img/image-2.jpeg" alt="Card image cap">
+                            </div>
+                            <div class="card-text m-2 font-weight-bold">97 Likes</div>
+                                <p class="card-text m-2">This is my second photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                            </div>
+                                <div class="card-text py-2 d-flex justify-content-between text-black-50 px-2">
+                                    <div class="">
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="far fa-heart"></i></button>
+                                        <input type="text" class="no-border" name="" placeholder="Comment...">
+                                    </div>
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="fas fa-ellipsis-v fa-1x"></i> 
+                                    </button>
+                                </div>
+                            </div>
+    <!-- grid-card-3 -->
+                    <div class="card my-card mb-5 mt-3">
+                        <div class="card-text mt-2 mx-2 d-flex bg-white justify-content-between">
+                            <p class="m-0 h3">My third photo</p><p class="m-0 h4">12/14</p>
+                        </div>
+                        <div class="card-body pl-0 pr-0 ">
+                            <div class="d-flex justify-content-center embed-responsive embed-responsive-16by9">
+                                <img class="card-img-top" src="./src/img/image-7.jpeg" alt="Card image cap">
+                            </div>
+                            <div class="card-text m-2 font-weight-bold">69 Likes</div>
+                                <p class="card-text m-2">This is my third photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                            </div>
+                                <div class="card-text py-2 d-flex justify-content-between text-black-50 px-2">
+                                    <div class="">
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="far fa-heart"></i></button>
+                                        <input type="text" class="no-border" name="" placeholder="Comment...">
+                                    </div>
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="fas fa-ellipsis-v fa-1x"></i> 
+                                    </button>
+                                </div>
+                            </div>
+    <!-- grid-card-4 -->
+                    <div class="card my-card mb-5 mt-3">
+                        <div class="card-text mt-2 mx-2 d-flex bg-white justify-content-between">
+                            <p class="m-0 h3">My fourth photo</p><p class="m-0 h4">12/14</p>
+                        </div>
+                        <div class="card-body pl-0 pr-0 ">
+                            <div class="d-flex justify-content-center embed-responsive embed-responsive-16by9">
+                                <img class="card-img-top" src="./src/img/image-3.jpeg" alt="Card image cap">
+                            </div>
+                            <div class="card-text m-2 font-weight-bold">69 Likes</div>
+                                <p class="card-text m-2">This is my fourth photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                            </div>
+                                <div class="card-text py-2 d-flex justify-content-between text-black-50 px-2">
+                                    <div class="">
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="far fa-heart"></i></button>
+                                        <input type="text" class="no-border" name="" placeholder="Comment...">
+                                    </div>
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="fas fa-ellipsis-v fa-1x"></i> 
+                                    </button>
+                                </div>
+                            </div>
+    <!-- grid-card-5 -->
+                    <div class="card my-card mb-5 mt-3">
+                        <div class="card-text mt-2 mx-2 d-flex bg-white justify-content-between">
+                            <p class="m-0 h3">My fifth photo</p><p class="m-0 h4">12/14</p>
+                        </div>
+                        <div class="card-body pl-0 pr-0 ">
+                            <div class="d-flex justify-content-center embed-responsive embed-responsive-16by9">
+                                <img class="card-img-top" src="./src/img/image-4.jpeg" alt="Card image cap">
+                            </div>
+                            <div class="card-text m-2 font-weight-bold">116 Likes</div>
+                                <p class="card-text m-2">This is my fifth photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                            </div>
+                                <div class="card-text py-2 d-flex justify-content-between text-black-50 px-2">
+                                    <div class="">
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="far fa-heart"></i></button>
+                                        <input type="text" class="no-border" name="" placeholder="Comment...">
+                                    </div>
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="fas fa-ellipsis-v fa-1x"></i> 
+                                    </button>
+                                </div>
+                            </div>
+    <!-- grid-card-6 -->
+                    <div class="card my-card mb-5 mt-3">
+                        <div class="card-text mt-2 mx-2 d-flex bg-white justify-content-between">
+                            <p class="m-0 h3">My sixth photo</p><p class="m-0 h4">12/14</p>
+                        </div>
+                        <div class="card-body pl-0 pr-0 ">
+                            <div class="d-flex justify-content-center embed-responsive embed-responsive-16by9">
+                                <img class="card-img-top" src="./src/img/image-5.jpeg" alt="Card image cap">
+                            </div>
+                            <div class="card-text m-2 font-weight-bold">43 Likes</div>
+                                <p class="card-text m-2">This is my sixht photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                            </div>
+                                <div class="card-text py-2 d-flex justify-content-between text-black-50 px-2">
+                                    <div class="">
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="far fa-heart"></i></button>
+                                        <input type="text" class="no-border" name="" placeholder="Comment...">
+                                    </div>
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="fas fa-ellipsis-v fa-1x"></i> 
+                                    </button>
+                                </div>
+                            </div>
+    <!-- grid-card-7 -->
+                    <div class="card my-card mb-5 mt-3">
+                        <div class="card-text mt-2 mx-2 d-flex bg-white justify-content-between">
+                            <p class="m-0 h3">My first video</p><p class="m-0 h4">12/14</p>
+                        </div>
+                        <div class="card-body pl-0 pr-0 ">
+                            <div class="d-flex justify-content-center embed-responsive embed-responsive-16by9">
+                                <video class="my-card-vid embed-responsive-item" playsinline autoplay muted loop>
+                                <source src="/src/vid/video-2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="card-text m-2 font-weight-bold">54 Likes</div>
+                                <p class="card-text m-2">This is my first video of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                            </div>
+                                <div class="card-text py-2 d-flex justify-content-between text-black-50 px-2">
+                                    <div class="">
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="far fa-heart"></i></button>
+                                        <input type="text" class="no-border" name="" placeholder="Comment...">
+                                    </div>
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="fas fa-ellipsis-v fa-1x"></i> 
+                                    </button>
+                                </div>
+                            </div>
+    <!-- grid-card-8 -->
+                    <div class="card my-card mb-5 mt-3">
+                        <div class="card-text mt-2 mx-2 d-flex bg-white justify-content-between">
+                            <p class="m-0 h3">My seventh photo</p><p class="m-0 h4">12/14</p>
+                        </div>
+                        <div class="card-body pl-0 pr-0 ">
+                            <div class="d-flex justify-content-center embed-responsive embed-responsive-16by9">
+                                <img class="card-img-top" src="./src/img/image-6.jpeg" alt="Card image cap">
+                            </div>
+                            <div class="card-text m-2 font-weight-bold">86 Likes</div>
+                                <p class="card-text m-2">This is my seventh photo of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                            </div>
+                                <div class="card-text py-2 d-flex justify-content-between text-black-50 px-2">
+                                    <div class="">
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="far fa-heart"></i></button>
+                                        <input type="text" class="no-border" name="" placeholder="Comment...">
+                                    </div>
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="fas fa-ellipsis-v fa-1x"></i> 
+                                    </button>
+                                </div>
+                            </div>                        
+    <!-- grid-card-9 -->
+                    <div class="card my-card mb-5 mt-3">
+                        <div class="card-text mt-2 mx-2 d-flex bg-white justify-content-between">
+                            <p class="m-0 h3">My second video</p><p class="m-0 h4">12/14</p>
+                        </div>
+                        <div class="card-body pl-0 pr-0 ">
+                            <div class="d-flex justify-content-center embed-responsive embed-responsive-16by9">
+                                <video class="my-card-vid embed-responsive-item" playsinline autoplay muted loop>
+                                <source src="/src/vid/video-3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="card-text m-2 font-weight-bold">77 Likes</div>
+                                <p class="card-text m-2">This is my second video of the feed. this is a multi line comment for testing purposes. I am learning to code with #BreatheCode</p>
+                            </div>
+                                <div class="card-text py-2 d-flex justify-content-between text-black-50 px-2">
+                                    <div class="">
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="far fa-heart"></i></button>
+                                        <input type="text" class="no-border" name="" placeholder="Comment...">
+                                    </div>
+                                        <button id="buttonLikeObject" class="button-enabled">
+                                        <i class="fas fa-ellipsis-v fa-1x"></i> 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- modal (I had to put it here for it to work properly)-->
+            <div class="modal fade" id="new-post">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row">
+                                <textarea class="form-control m-2 border-secondary"></textarea>
+                                <div class="m-2">
+                                    <button class="btn btn-outline-secondary text-dark mr-1" type="button"><i class="fa fa-camera"></i></button>
+                                    <button class="btn btn-outline-secondary text-dark" type="button"><i class="fa fa-map-marker-alt"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

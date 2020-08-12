@@ -1,0 +1,34 @@
+body{
+    font-family: 'Open Sans', sans-serif; font-size: 18px;
+}
+.my-bgcolor{
+    background-color: rgb(220, 220, 220);
+}
+.no-border{
+  border: none;
+  outline: none;
+}
+.button-enabled{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: gray;
+  background-color: white;
+}
+.button-enabled:active {
+  background-color: white;
+  transform: translateY(4px);
+  outline: none;
+  border: none;
+}
+.dropdown-item:active{
+    color:black;
+    background-color: rgb(231, 231, 231);
+}
+.nav-pills .pill-color .nav-link:not(.active) {
+    background-color: white;
+    color: grey;
+}
+.nav-pills .pill-color .nav-link {
+    background-color: grey;
+    color: white;
