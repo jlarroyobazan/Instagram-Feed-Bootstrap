@@ -8,6 +8,32 @@ body{
   border: none;
   outline: none;
 }
+.size-img-vid {
+    padding: 0px;
+    border: 1px solid white;
+}
+.zoom-img-vid {
+  overflow: hidden;
+  position: relative;
+}
+.zoom-img-vid:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.3);
+  opacity: 0;
+  transition: opacity .25s;
+}
+.zoom-img-vid img {
+  transition: transform .25s;
+  width: 100%;
+}
+.zoom-img-vid:hover img {
+  transform: scale(1.2);
+}
+.zoom-img-vid:hover:after {
+  opacity: 1;
+}
 .button-enabled{
   cursor: pointer;
   outline: none;
@@ -32,3 +58,4 @@ body{
 .nav-pills .pill-color .nav-link {
     background-color: grey;
     color: white;
+}
